@@ -1,0 +1,118 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "NLW",
+    "dateExported": "2024-04-06T01:43:22.084Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "b055e983-21d5-4b2b-968b-c05bf3b185a6",
+            "name": "python",
+            "containerId": "57cd0301-845c-4636-ba14-7aa5b705445a",
+            "created": "2024-04-05T00:34:59.122Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "57cd0301-845c-4636-ba14-7aa5b705445a",
+            "name": "Unite",
+            "containerId": "",
+            "created": "2024-04-05T17:15:31.030Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "c6cc6ee2-cd82-47e3-a2a4-986b248a8537",
+            "colId": "5500d6f1-5a12-4177-baf1-c7ec327d098c",
+            "containerId": "b055e983-21d5-4b2b-968b-c05bf3b185a6",
+            "name": "Create Event",
+            "url": "localhost:3000/events",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-05T00:35:14.948Z",
+            "modified": "2024-04-06T01:39:16.289Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"NLW 15.2\",\n  \"details\": \"Trilha Python 3\",\n  \"slug\": \"nlw-15-2\",\n  \"maximum_attendees\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2bdfd526-312f-4180-8df8-f6fc07d21f57",
+            "colId": "5500d6f1-5a12-4177-baf1-c7ec327d098c",
+            "containerId": "b055e983-21d5-4b2b-968b-c05bf3b185a6",
+            "name": "Create Check In",
+            "url": "localhost:3000/checkins/f01e2f0a-1571-4fdf-b2eb-4114afeb49d3",
+            "method": "POST",
+            "sortNum": 12500,
+            "created": "2024-04-05T20:47:16.242Z",
+            "modified": "2024-04-06T01:41:04.737Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e56d5a99-a472-40fe-8208-7c401910afcc",
+            "colId": "5500d6f1-5a12-4177-baf1-c7ec327d098c",
+            "containerId": "b055e983-21d5-4b2b-968b-c05bf3b185a6",
+            "name": "Create Attendee",
+            "url": "localhost:3000/attendees/ab5bc299-b3f0-4d55-9e67-697721533ce9/register",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-04-05T18:39:41.549Z",
+            "modified": "2024-04-06T01:40:15.028Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"philipp1\",\n  \"email\": \"philipp1@domain.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7c540635-7f51-4368-8baa-64b2a90dcfaa",
+            "colId": "5500d6f1-5a12-4177-baf1-c7ec327d098c",
+            "containerId": "b055e983-21d5-4b2b-968b-c05bf3b185a6",
+            "name": "Get Event",
+            "url": "localhost:3000/events/07c5934a-eb8e-4081-96d6-67525ee40c6b",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-05T17:15:40.590Z",
+            "modified": "2024-04-05T17:18:26.371Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "18a0a22d-1592-4567-b2e0-4fcdf012d2e8",
+            "colId": "5500d6f1-5a12-4177-baf1-c7ec327d098c",
+            "containerId": "b055e983-21d5-4b2b-968b-c05bf3b185a6",
+            "name": "Get Badge",
+            "url": "localhost:3000/attendees/f452b049-60df-45f2-bc18-677de6988f11/badge",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-05T19:33:46.985Z",
+            "modified": "2024-04-05T19:37:24.343Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b588b5f7-b192-4b49-a0c9-16fa0f5fb2b3",
+            "colId": "5500d6f1-5a12-4177-baf1-c7ec327d098c",
+            "containerId": "b055e983-21d5-4b2b-968b-c05bf3b185a6",
+            "name": "Get Attendees by Event",
+            "url": "localhost:3000/attendees/ab5bc299-b3f0-4d55-9e67-697721533ce9/attendees",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-05T20:18:45.735Z",
+            "modified": "2024-04-06T01:40:46.741Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

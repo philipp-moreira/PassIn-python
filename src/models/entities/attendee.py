@@ -6,7 +6,7 @@ from src.models.settings.base import Base
 class Attendee(Base):
     __tablename__ = "attendees"
 
-    id = Column(String, primary_key=True)
+    id = Column(String, ForeignKey("attendees.id"),primary_key=True)
     name = Column(String, nullable=False)
     email = Column(String, nullable=False)
     event_id = Column(String, ForeignKey("events.id"))
